@@ -10,4 +10,4 @@ const SpecialButton = ({special}) => {
   );
 };
 
-export SpecialButton
+export default SpecialButton
