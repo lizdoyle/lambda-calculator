@@ -22,12 +22,12 @@ const Operators = () => {
        
        operatorState.map(operator => {
 
-        return  <OperatorButton operator = {operators} key ={operators} />;
+        return  <OperatorButton operator = {operators} key ={operators} />
           
-        });
+        })
       }
     </div>
-  );
-};
+  )
+}
 
 export default Operators

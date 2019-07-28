@@ -1,8 +1,11 @@
-import React from "react";
-import "./App.css";
+import React, {Fragment} from "react";
+import "./App.sass";
 
 
 // STEP 4 - import the button and display components
+// import NumberButton from ".components/ButtonComponents/NumberButtons/NumberButton";
+// import OperatorButton from ".components/ButtonComponents/OperatorButtons/OperatorButton";
+// import SpecialButton from ".components/ButtonComponents/NumberButtons/NumberButtons";
 
 
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
@@ -25,16 +28,21 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
-        {/* STEP 4 - Render your components here and be sure to properly import/export all files */
-        <Display />
-        <Numbers />
-        <Operators />
-        <Specials />
-        
+        { /* STEP 4 - Render your components here and be sure to properly import/export all files */
+        <Fragment>
+          <Logo />
+          <Display />
+          <Numbers />
+          
+          <Operators />
+          
+          <Specials />
+        </Fragment>
+      
         }
       </div>
     </div>
-  );
+  )
 }
 
 export default App;

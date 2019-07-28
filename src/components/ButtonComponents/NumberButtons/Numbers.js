@@ -6,7 +6,7 @@ import React, {useState} from "react";
 //Import your array data to from the provided data file
 
 import { numbers } from "../../../data";
-import { NumberButton } from "./NumberButton";
+import NumberButton from "./NumberButton";
 
 
 
@@ -23,14 +23,14 @@ const [numberState, setNumberState] = useState(numbers);
        
         numberState.map(number => {
 
-          return  <NumberButton num = {number} key ={number} />;
+          return  <NumberButton num = {number} key ={number} />
             
-          });
+          })
        
       }
 
     </div>
-  );
-};
+  )
+}
 
-export default Numbers;
+export default Numbers

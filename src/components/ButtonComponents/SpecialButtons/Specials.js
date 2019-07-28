@@ -25,11 +25,12 @@ const Specials = () => {
        
        specialState.map(special => {
 
-        return  <SpecialButton special = {specials} key ={specials} />;
+        return  <SpecialButton special = {specials} key ={specials} />
           
-        });}
+        })
+      }
     </div>
-  );
-};
+  )
+}
 
 export default Specials
