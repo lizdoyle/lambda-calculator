@@ -1,13 +1,33 @@
 import React from "react";
+import "./specialButtons.scss";
 
-const SpecialButton = ({special}) => {
+export const SpecialButton = ({special, setValues, values}) => {
+  const handleSpecial = () => {
+    switch (special) {
+      case "C":
+        setValues("");
+        break;
+      case "+/-":
+        setValues("-" + "(" + values + ")");
+        break;
+      case "%":
+        setValues(values.concat("%"));
+        break;
+      default:
+        console.log("default");
+
+    }
+
+  }
+
   return (
-    <>
-      {
-        <button>{special}</button>
-        /* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+  
+        <button className="specialBTN, button" onClick={handleSpecial}>
+        
+        {special}
+        
+        </button>
+  
   )
 }
 
-export default SpecialButton

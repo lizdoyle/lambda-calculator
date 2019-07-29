@@ -1,16 +1,17 @@
 import React from "react";
+import  "./numberButtons.scss";
 
-const NumberButton = ({num}) => {
-  // console.log(num);
-  return (
-    <>
-      {
-        <button>{num}</button>
+export const NumberButton = props => {
+    
+  const handeleAddToEquation = () => {
+    props.addToEquation(props.number)
+  }
+    return (
+        <button className="numBTN, button" onClick={handeleAddToEquation}>
         
-        /* Display a button element rendering the data being passed down from the parent container on props */
-        }
-    </>
-  )
-}
+        {props.number}
+            
+        </button>
+  );
+};
 
-export default NumberButton
