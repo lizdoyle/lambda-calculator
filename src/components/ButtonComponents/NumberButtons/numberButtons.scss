@@ -1,6 +1,12 @@
-.numBTN{
-    background-color: darkblue;
-    color: whitesmoke;
-    border: black solid;
-    font-size: 50px;
-}
+button .numBTN{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: black solid;
+
+        
+    }
+
+
+
+
