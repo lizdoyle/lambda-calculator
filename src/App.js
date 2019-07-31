@@ -38,17 +38,17 @@ function App() {
       <Logo />
       <Display values={values} />
       <div className="App">
-        <div className="specialsNumber">
+        <div className="specialsContainer">
           <Specials 
           addToEquation={addToEquation}
           setValues={setValues}
           values={values}
           />
         </div>
-        <div className="operatorsCircle">
+        <div className="operatorsContainer opsColor">
           <Operators addToEquation={addToEquation} calculate={calculate} />
         </div>
-        <div className="numbersCircle"> 
+        <div className="numbersContainer"> 
           <Numbers addToEquation={addToEquation} />
         </div>
        

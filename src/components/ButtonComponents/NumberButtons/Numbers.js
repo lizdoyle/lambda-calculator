@@ -14,7 +14,7 @@ import { numbers } from "../../../data";
 
 export const Numbers = props => {
   // STEP 2 - add the imported data to state
-console.log("Numbers.js: Numbers: props:", props);
+// console.log("Numbers.js: Numbers: props:", props);
 const [numberState, setNumberState] = useState(numbers);
 
 const renderButton  = number => {
